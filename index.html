@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCC Wallet</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- MODE SOMBRE -->
+
+  <button id="theme-toggle" class="theme-toggle">
+    🌙
+  </button>
+
+
+  <!-- PAGE ACCUEIL -->
+
+  <section class="page active-page" id="page-accueil">
+
+    <div class="mobile-app">
+
+      <!-- HEADER -->
+
+      <header class="header">
+
+        <div class="profil">
+
+          <img src="images/avatar.png" class="avatar">
+
+          <div>
+            <h3>Bonjour</h3>
+            <p>Bienvenue sur BCC</p>
+          </div>
+
+        </div>
+
+
+        <div class="notification">
+
+          <img src="images/notification.png">
+
+        </div>
+
+      </header>
+
+
+      <!-- CARTE SOLDE -->
+
+      <section class="carte-solde">
+
+        <img src="images/fond-carte.png" class="fond-carte">
+
+
+        <div class="contenu-solde">
+
+          <small>Solde disponible</small>
+
+          <div class="ligne-solde">
+
+            <h1 id="texte-solde">
+              0 BCC
+            </h1>
+
+            <button id="toggle-solde">
+              👁
+            </button>
+
+          </div>
+
+          <span class="estimation">
+            Estimation : 0 FCFA
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <!-- ACTIONS -->
+
+      <section class="actions">
+
+        <div class="action-btn popup-btn">
+
+          <div class="icon orange">
+            <img src="images/envoyer.png">
+          </div>
+
+          <p>Envoyer</p>
+
+        </div>
+
+
+        <div class="action-btn popup-btn">
+
+          <div class="icon bleu">
+            <img src="images/recevoir.png">
+          </div>
+
+          <p>Recevoir</p>
+
+        </div>
+
+
+        <div class="action-btn popup-btn">
+
+          <div class="icon violet">
+            <img src="images/scanner.png">
+          </div>
+
+          <p>Scanner</p>
+
+        </div>
+
+
+        <div class="action-btn popup-btn">
+
+          <div class="icon vert">
+            <img src="images/convertir.png">
+          </div>
+
+          <p>Convertir</p>
+
+        </div>
+
+      </section>
+
+
+      <!-- HISTORIQUE -->
+
+      <section class="historique">
+
+        <div class="titre-historique">
+          <h2>Historique</h2>
+        </div>
+
+
+        <div class="vide-historique">
+
+          <img src="images/historique.png">
+
+          <p>Aucune transaction</p>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </section>
+
+
+  <!-- PAGE GAGNER -->
+
+  <section class="page" id="page-gagner">
+
+    <div class="mobile-app">
+
+      <header class="header">
+        <h2>Gagner des BCC</h2>
+      </header>
+
+
+      <section class="carte-solde">
+
+        <img src="images/fond-carte.png" class="fond-carte">
+
+
+        <div class="contenu-solde">
+
+          <small>Solde de récompense</small>
+
+          <div class="ligne-solde">
+
+            <h1>
+              0 BCC
+            </h1>
+
+          </div>
+
+          <span class="estimation">
+            Service bientôt disponible
+          </span>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </section>
+
+
+  <!-- PAGE PROFIL -->
+
+  <section class="page" id="page-profil">
+
+    <div class="mobile-app">
+
+      <header class="header">
+        <h2>Mon Profil</h2>
+      </header>
+
+
+      <div class="formulaire">
+
+        <div class="champ">
+
+          <label>Nom complet</label>
+
+          <input type="text" placeholder="Votre nom">
+
+        </div>
+
+
+        <div class="champ">
+
+          <label>Numéro</label>
+
+          <input type="text" placeholder="+225">
+
+        </div>
+
+
+        <div class="champ">
+
+          <label>Email</label>
+
+          <input type="email" placeholder="email@gmail.com">
+
+        </div>
+
+
+        <div class="champ">
+
+          <label>Ville</label>
+
+          <input type="text" placeholder="Votre ville">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MENU BAS -->
+
+  <nav class="menu-bas">
+
+    <button class="menu-item active" data-page="page-accueil">
+
+      <img src="images/accueil.png">
+
+      <p>Accueil</p>
+
+    </button>
+
+
+    <button class="menu-item" data-page="page-gagner">
+
+      <img src="images/cadeau.png">
+
+      <p>Gagner</p>
+
+    </button>
+
+
+    <div class="logo-centre">
+
+      <img src="images/logo-bcc.png">
+
+    </div>
+
+
+    <button class="menu-item" data-page="page-profil">
+
+      <img src="images/profil.png">
+
+      <p>Profil</p>
+
+    </button>
+
+  </nav>
+
+
+  <!-- POPUP -->
+
+  <div class="popup" id="popup">
+
+    Service bientôt disponible
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
